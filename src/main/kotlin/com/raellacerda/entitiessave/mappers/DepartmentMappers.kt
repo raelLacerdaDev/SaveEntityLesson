@@ -10,5 +10,5 @@ fun Department.toDto(): DepartmentDto = DepartmentDto(
 
 fun DepartmentDto.toEntity(): Department = Department(
     id = this.id,
-    name = this.name,
+    name = this.name ?: "",
 )
